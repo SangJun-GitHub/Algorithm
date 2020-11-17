@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 //https://www.acmicpc.net/problem/10815
 
-public class P3 {
+public class B03 {
     //갖고있는 카드개수 N
     static int[] nCards;
     //비교할 카드수 M

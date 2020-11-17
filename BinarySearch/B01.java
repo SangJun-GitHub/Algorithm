@@ -10,7 +10,7 @@ import java.util.Scanner;
 //https://www.acmicpc.net/problem/1920
 
 
-public class B1 {
+public class B01 {
     static int[] A;
     public static int binarySearch(int []array, int key){
         int start = 0;

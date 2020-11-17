@@ -10,7 +10,7 @@ import java.util.Arrays;
  */
 //https://www.acmicpc.net/problem/1654
 
-public class P4 {
+public class B04 {
     //K개의 랜선
     //N개의 필요
     static int[] K;

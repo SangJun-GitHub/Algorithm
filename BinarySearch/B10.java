@@ -12,7 +12,7 @@ import java.util.List;
  * Github : http://github.com/SangJun-GitHub
  */
 //https://www.acmicpc.net/problem/12015
-public class P10 {
+public class B10 {
     static int[] N;
     static List<Integer> list = new ArrayList<>();
     public static int binarySearch(int[] N){

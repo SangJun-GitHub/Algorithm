@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
  * Github : http://github.com/SangJun-GitHub
  */
 //https://www.acmicpc.net/problem/1789
-public class P9 {
+public class B09 {
     static long S;
     public static long binarySearch(long s){
         long start = 1;

@@ -10,7 +10,7 @@ import java.util.Arrays;
  * Github : http://github.com/SangJun-GitHub
  */
 //https://www.acmicpc.net/problem/2512
-public class P7 {
+public class B07 {
     static int[] N;
     static int M;
 

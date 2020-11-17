@@ -11,7 +11,7 @@ import java.util.Arrays;
  */
 //https://www.acmicpc.net/problem/10816
 
-public class P6 {
+public class B06 {
     static int[] N;
     static int[] M;
 

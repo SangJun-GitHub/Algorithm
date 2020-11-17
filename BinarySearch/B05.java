@@ -13,7 +13,7 @@ import java.util.List;
  */
 //https://www.acmicpc.net/problem/1764
 
-public class P5 {
+public class B05 {
     static String[] N;
     static String[] M;
     static int number = 0;

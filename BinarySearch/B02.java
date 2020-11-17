@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Github : http://github.com/SangJun-GitHub
  */
 //https://www.acmicpc.net/problem/2805
-public class P2 {
+public class B02 {
 
     static int[]trees;
     public static int binarySearch(int[] trees, int amount){
