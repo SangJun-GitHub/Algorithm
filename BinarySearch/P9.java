@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
  * Created by Sang Jun Park on 11/16/2020.
  * Github : http://github.com/SangJun-GitHub
  */
+//https://www.acmicpc.net/problem/1789
 public class P9 {
     static long S;
     public static long binarySearch(long s){
