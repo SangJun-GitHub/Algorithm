@@ -10,6 +10,7 @@ import java.util.List;
  * Created by Sang Jun Park on 11/19/2020.
  * Github : http://github.com/SangJun-GitHub
  */
+//https://www.acmicpc.net/problem/2231
 public class Bruteforcing04 {
     static int N;
     static List<Integer> result = new ArrayList<>();
