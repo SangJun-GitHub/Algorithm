@@ -12,7 +12,7 @@ import java.io.InputStreamReader;
 public class Bruteforcing02 {
     static int[] N;
     static int M;
-    public static int Bruteforcing(int[] N, int m){
+    public static int bruteforcing(int[] N, int m){
         int max = 0;
         int sum = 0;
         for(int i = 0; i < N.length - 2; i++){
@@ -38,6 +38,6 @@ public class Bruteforcing02 {
         for(int i = 0; i < N.length; i++){
             N[i] = Integer.parseInt(line[i]);
         }
-        System.out.println(Bruteforcing(N, M));
+        System.out.println(bruteforcing(N, M));
     }
 }

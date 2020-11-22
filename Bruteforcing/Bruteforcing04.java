@@ -14,7 +14,7 @@ import java.util.List;
 public class Bruteforcing04 {
     static int N;
     static List<Integer> result = new ArrayList<>();
-    public static void Bruteforcing(int N){
+    public static void bruteforcing(int N){
         int temp;
         for(int i = 1; i < N; i++){
             int sum = 0;
@@ -32,7 +32,7 @@ public class Bruteforcing04 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         N = Integer.parseInt(br.readLine());
-        Bruteforcing(N);
+        bruteforcing(N);
         if(!result.isEmpty()){
             System.out.println(result.get(0));
 

@@ -12,7 +12,7 @@ import java.io.InputStreamReader;
 public class Bruteforcing05 {
     static int[] weight;
     static int[] height;
-    public static void Bruteforcing(int[] w, int[] h, int n){
+    public static void bruteforcing(int[] w, int[] h, int n){
         int[] result = new int[n];
         for(int i =0; i < n; i++){
             result[i] = 1;
@@ -40,6 +40,6 @@ public class Bruteforcing05 {
             weight[i] = Integer.parseInt(line[0]);
             height[i] = Integer.parseInt(line[1]);
         }
-        Bruteforcing(weight, height, n);
+        bruteforcing(weight, height, n);
     }
 }

@@ -14,7 +14,7 @@ public class Bruteforcing03 {
     static int[] dwarf = new int[9];
     static int[] wrong = new int[2];
 
-    public static void Bruteforcing(int[]dwarf){
+    public static void bruteforcing(int[]dwarf){
         int sum = 0;
         for(int d : dwarf){
             sum += d;
@@ -43,6 +43,6 @@ public class Bruteforcing03 {
             dwarf[i] = Integer.parseInt(br.readLine());
         }
         Arrays.sort(dwarf);
-        Bruteforcing(dwarf);
+        bruteforcing(dwarf);
     }
 }

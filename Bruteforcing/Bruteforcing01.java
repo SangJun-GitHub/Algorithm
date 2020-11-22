@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
 //https://www.acmicpc.net/problem/1065
 public class Bruteforcing01 {
     static int N;
-    public static int Bruteforcing(int n){
+    public static int bruteforcing(int n){
         int result = 0;
         int[] digits;
         for(int i = 1; i <= n; i++){
@@ -43,7 +43,7 @@ public class Bruteforcing01 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         N = Integer.parseInt(br.readLine());
-        System.out.println(Bruteforcing(N));
+        System.out.println(bruteforcing(N));
 
     }
 }
