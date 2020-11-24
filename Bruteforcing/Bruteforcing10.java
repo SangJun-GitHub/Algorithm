@@ -5,4 +5,7 @@ package Bruteforcing;
  * Github : http://github.com/SangJun-GitHub
  */
 public class Bruteforcing10 {
+    public static void main(String[] args) {
+        
+    }
 }
