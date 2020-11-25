@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
  * Created by Sang Jun Park on 11/20/2020.
  * Github : http://github.com/SangJun-GitHub
  */
+//https://www.acmicpc.net/problem/3085
 public class Bruteforcing07 {
     static String[][] candy;
     static int N;
@@ -22,8 +23,7 @@ public class Bruteforcing07 {
                 ch = candy[i][j + 1];
                 candy[i][j + 1] = candy[i][j];
                 candy[i][j] = ch;
-                if(max > answer)
-                    answer = max;
+                answer = Math.max(max, answer);
             }
         }
         for(int i = 0; i < candy.length; i++){
@@ -35,11 +35,9 @@ public class Bruteforcing07 {
                 ch = candy[j + 1][i];
                 candy[j + 1][i] = candy[j][i];
                 candy[j][i] = ch;
-                if(max > answer)
-                    answer = max;
+                answer = Math.max(max, answer);
             }
         }
-
         return answer;
     }
     public static int check(String[][] temp){
@@ -50,30 +48,23 @@ public class Bruteforcing07 {
                 if(temp[i][j].equals(temp[i][j-1]))
                     ++count;
                 else{
-                    if(count > max){
-                        max = count;
-                        count = 1;
-                    }
+                    max = Math.max(max, count);
+                    count = 1;
                 }
             }
-            if(count > max)
-                max = count;
+            max = Math.max(max, count);
         }
-
         for(int i = 0; i < temp.length; i++){
             int count = 1;
             for(int j = 1; j < temp.length; j++){
                 if(temp[j][i].equals(temp[j-1][i]))
                     ++count;
                 else{
-                    if(count > max){
-                        max = count;
-                        count = 1;
-                    }
+                    max = Math.max(max, count);
+                    count = 1;
                 }
             }
-            if(count > max)
-                max = count;
+            max = Math.max(max, count);
         }
         return max;
     }

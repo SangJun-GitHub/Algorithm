@@ -6,6 +6,6 @@ package Bruteforcing;
  */
 public class Bruteforcing10 {
     public static void main(String[] args) {
-        
+
     }
 }
