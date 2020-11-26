@@ -5,4 +5,7 @@ package DynamicProgramming;
  * Github : http://github.com/SangJun-GitHub
  */
 public class DynamicProgramming04 {
+    public static void main(String[] args) {
+        
+    }
 }
