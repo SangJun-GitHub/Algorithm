@@ -8,33 +8,32 @@ import java.io.InputStreamReader;
  * Created by Sang Jun Park on 11/21/2020.
  * Github : http://github.com/SangJun-GitHub
  */
+//https://www.acmicpc.net/problem/1018
 public class Bruteforcing10 {
     static int N;
     static int M;
     static boolean [][] board;
     static int min = 64;
-    public static int Bruteforcing(){
-        int N_max = N - 7;
-        int M_max = M - 7;
-        for(int i = 0; i < N_max; i ++){
-            for(int j = 0; j < M_max; j++){
-                boolean color = board[i][j];
-                int change = 0;
-                for(int x = i+1; x < i + 8; x++){
-                    for(int y = j+1; y < j + 8; y++)
-                    {
-                        if(board[x][y] != color){
-                            change++;
-                        }
-                        color = !color;
-                    }
-                    color = !color;
+    public static int Bruteforcing(int x, int y){
+        int result_w = 0;
+        int result_b = 0;
+        boolean color_w = true;
+        boolean color_b = false;
+        for(int i = x; i < x + 8; i++){
+            for(int j = y; j < y + 8; j++){
+                if(board[i][j] != color_w) {
+                    result_w++;
                 }
-                change = Math.min(change, 64 - change);
-                min = Math.min(min, change);
+                color_w = (!color_w);
+                if(board[i][j] != color_b){
+                    result_b++;
+                }
+                color_b = (!color_b);
             }
+            color_w = (!color_w);
+            color_b = (!color_b);
         }
-        return min;
+        return Math.min(result_w, result_b);
     }
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -45,12 +44,17 @@ public class Bruteforcing10 {
         for(int i = 0; i < N; i++){
             line = br.readLine().split("");
             for(int j = 0; j < M; j++){
-                if(line[j] == "W")
+                if(line[j].equals("W"))
                     board[i][j] = true;
                 else
                     board[i][j] = false;
             }
         }
-        System.out.println(Bruteforcing());
+        for(int i = 0; i < N - 7; i++){
+            for(int j = 0; j < M - 7; j++){
+                min = Math.min(min, Bruteforcing(i, j));
+            }
+        }
+        System.out.println(min);
     }
 }
