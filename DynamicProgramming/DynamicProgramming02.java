@@ -8,25 +8,26 @@ import java.io.InputStreamReader;
  * Created by Sang Jun Park on 11/25/2020.
  * Github : http://github.com/SangJun-GitHub
  */
+//https://www.acmicpc.net/problem/2748
 public class DynamicProgramming02 {
     static int N;
-    static int[] fibo_dp;
-    public static int fibo(int n){
+    static long[] fibo;
+    public static long DynamicProgramming(int n){
         if(n <= 2){
-            fibo_dp[n] = 1;
-            return fibo_dp[n];
+            fibo[n] = 1;
+            return fibo[n];
         }
-        if(fibo_dp[n] != 0)
-            return fibo_dp[n];
+        if(fibo[n] != 0)
+            return fibo[n];
         else{
-            fibo_dp[n] = fibo(n - 1) + fibo(n - 2);
-            return fibo_dp[n];
+            fibo[n] = DynamicProgramming(n - 1) + DynamicProgramming(n - 2);
+            return fibo[n];
         }
     }
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         N = Integer.parseInt(br.readLine());
-        fibo_dp = new int[N+1];
-        System.out.println(fibo(N));
+        fibo = new long[N+1];
+        System.out.println(DynamicProgramming(N));
     }
 }
