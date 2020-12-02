@@ -6,6 +6,6 @@ package DynamicProgramming;
  */
 public class DynamicProgramming07 {
     public static void main(String[] args) {
-        
+
     }
 }
