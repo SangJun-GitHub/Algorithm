@@ -5,4 +5,7 @@ package Queue;
  * Github : http://github.com/SangJun-GitHub
  */
 public class Queue03 {
+    public static void main(String[] args) {
+        
+    }
 }
