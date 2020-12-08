@@ -6,6 +6,6 @@ package Queue;
  */
 public class Queue03 {
     public static void main(String[] args) {
-        
+
     }
 }
