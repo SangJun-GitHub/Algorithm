@@ -12,24 +12,27 @@ public class DynamicProgramming07 {
     static int N;
     static int[][] value;
     static int[][] cost;
-    public static int DynamicProgramming(){
-        return 0;
-    }
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         N = Integer.parseInt(br.readLine());
-        value = new int[2][N];
-        cost = new int[2][N];
+        value = new int[2][N+1];
+        cost = new int[2][N+1];
         String[] line;
         for(int i = 0; i < 2; i++){
             line = br.readLine().split(" ");
-            for(int j = 0; j < N; j++){
+            for(int j = 0; j <= N; j++){
                 value[i][j] = Integer.parseInt(line[j]);
             }
         }
-        cost[0][0] = value[0][0];
-        cost[1][0] = value[1][0];
-        System.out.println();
+        cost[0][1] = value[0][1];
+        cost[1][1] = value[1][1];
+
+        for(int i = 2; i <= N; i++){
+            cost[0][i] = Math.max(cost[1][i - 1], cost[1][i - 2]) + value[0][i];
+            cost[1][i] = Math.max(cost[0][i - 1], cost[1][i - 2]) + value[1][i];
+        }
+        
+        System.out.println(Math.max(cost[0][N],cost[1][N]));
     }
 }
