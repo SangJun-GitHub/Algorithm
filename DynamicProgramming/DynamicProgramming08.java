@@ -24,5 +24,8 @@ public class DynamicProgramming08 {
             coin[i] = Integer.parseInt(br.readLine());
         }
         dp = new int[K + 1];
+        for(int i = 0; i < K + 1; i++)
+            dp[i] = 10001;
+        dp[0] = 0;
     }
 }
