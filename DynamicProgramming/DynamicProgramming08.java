@@ -25,7 +25,14 @@ public class DynamicProgramming08 {
         }
         dp = new int[K + 1];
         for(int i = 0; i < K + 1; i++)
-            dp[i] = 10001;
+            dp[i] = 100001;
         dp[0] = 0;
+
+        for(int i = 0; i < N; i++){
+            for(int j = coin[i]; j <= K; j++){
+                dp[j] = Math.min(dp[j], dp[j - coin[i]] + 1);
+            }
+        }
+        System.out.println(dp[K] == 100001 ? -1 : dp[K]);
     }
 }
