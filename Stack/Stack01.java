@@ -5,4 +5,7 @@ package Stack;
  * Github : http://github.com/SangJun-GitHub
  */
 public class Stack01 {
+    public static void main(String[] args) {
+        
+    }
 }
