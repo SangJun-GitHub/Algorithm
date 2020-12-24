@@ -23,6 +23,6 @@ public class DynamicProgramming09 {
                 dp[i] = Math.min(dp[i-(j*j)] + 1, dp[i]);
             }
         }
-
+        System.out.println(dp[N]);
     }
 }
