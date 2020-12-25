@@ -6,6 +6,6 @@ package Stack;
  */
 public class Stack02 {
     public static void main(String[] args) {
-        
+
     }
 }
