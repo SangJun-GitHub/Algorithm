@@ -1,105 +1,36 @@
 package Ch02;
 
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Stack;
 
 /**
  * Created by Sang Jun Park on 9/2/2023.
  * Github : http://github.com/SangJun-GitHub
  */
 public class Main1874 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
+    static int N;
+    static StringBuilder sb = new StringBuilder();
+    static int num = 1;
+    static boolean pass = true;
 
-        ArrayStack stack = new ArrayStack(n);
-        StringBuilder sb = new StringBuilder();
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        N = Integer.parseInt(br.readLine());
 
-        int index = 0;
-        boolean pass = true;
-        while( n-- > 0){
-            int value = scanner.nextInt();
+        Stack<Integer> stack = new Stack<>();
 
-            if(value > index){
-                for(int i = index + 1; i <= value; i++){
-                    stack.push(i);
-                    sb.append('+').append('\n');
-                }
-                stack.pop();
-                index = value;
-            } else if(stack.peek() == value) {
-                stack.pop();
-                sb.append('-').append('\n');
-            }else if(stack.peek() != value){
-                pass = false;
+
+        for(int i = 0; i < N; i++){
+            int input = Integer.parseInt(br.readLine());
+
+            for(; num <= input; num++){
+                stack.push(num);
+                sb.append("+").append("\n")
             }
-
-        }
-
-
-        if(pass) {
-            System.out.println(sb);
-        }else{
-            sb.delete(0, sb.length());
-            sb.append("NO").append('\n');
-            System.out.println(sb);
         }
     }
-    interface Stack {
-        boolean isEmpty();
-        boolean isFull();
-        void push(int num);
-        int pop();
-        int peek();
-        void clear();
-    }
-    static class ArrayStack implements Stack{
-        private int top;
-        private final int stackSize;
-        private int[] stackArr;
 
-        public ArrayStack(int stackSize){
-            top = -1;
-            this.stackSize = stackSize;
-            stackArr = new int[this.stackSize];
-        }
-
-        public boolean isEmpty(){
-            return (top == -1);
-        }
-
-        public boolean isFull(){
-            return (top == this.stackSize);
-        }
-
-        public void push(int num){
-            if(isFull()){
-                System.out.println("Stack is full");
-            }else {
-                stackArr[++top] = num;
-            }
-        }
-
-        public int pop(){
-            if(isEmpty()){
-                System.out.println("Stack is empty");
-                return 0;
-            }else{
-                return stackArr[top--];
-            }
-        }
-        public int peek(){
-            if(isEmpty()){
-                System.out.println("Stack is empty");
-                return 0;
-            }else {
-                return stackArr[top];
-            }
-        }
-
-        public void clear(){
-            top = -1;
-            stackArr = new int[this.stackSize];
-        }
-    }
 }
