@@ -1,6 +1,5 @@
 package Ch02;
 
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -16,7 +15,7 @@ public class Main1874 {
     static int num = 1;
     static boolean pass = true;
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         N = Integer.parseInt(br.readLine());
 
@@ -24,13 +23,25 @@ public class Main1874 {
 
 
         for(int i = 0; i < N; i++){
-            int input = Integer.parseInt(br.readLine());
+            int data = Integer.parseInt(br.readLine());
 
-            for(; num <= input; num++){
+            for(; num <= data; num++){
                 stack.push(num);
-                sb.append("+").append("\n")
+                sb.append("+").append("\n");
+            }
+
+            if(stack.peek() == data){
+                stack.pop();
+                sb.append("-").append("\n");
+            } else{
+                pass = false;
             }
         }
-    }
 
+        if(pass){
+            System.out.println(sb);
+        } else {
+            System.out.println("NO");
+        }
+    }
 }
