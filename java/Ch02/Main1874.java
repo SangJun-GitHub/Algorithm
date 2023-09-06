@@ -9,6 +9,7 @@ import java.util.Stack;
  * Created by Sang Jun Park on 9/2/2023.
  * Github : http://github.com/SangJun-GitHub
  */
+//https://www.acmicpc.net/problem/1874
 public class Main1874 {
     static int N;
     static StringBuilder sb = new StringBuilder();
