@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 /**
  * Created by Sang Jun Park on 7/8/2023.
- * Github : http://github.com/SangJun-GitHub
+ * GitHub : http://github.com/SangJun-GitHub
  */
 //https://www.acmicpc.net/problem/11022
 public class Main11022 {

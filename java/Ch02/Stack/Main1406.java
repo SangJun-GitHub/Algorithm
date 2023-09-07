@@ -1,11 +1,11 @@
-package Ch02;
+package Ch02.Stack;
 
 import java.io.*;
 import java.util.Stack;
 
 /**
  * Created by Sang Jun Park on 9/1/2023.
- * Github : http://github.com/SangJun-GitHub
+ * GitHub : http://github.com/SangJun-GitHub
  */
 //https://www.acmicpc.net/problem/1406
 public class Main1406 {
