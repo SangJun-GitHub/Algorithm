@@ -9,6 +9,7 @@ import java.util.Stack;
  * Created by Sang Jun Park on 9/5/2023.
  * GitHub : http://github.com/SangJun-GitHub
  */
+//https://www.acmicpc.net/problem/10799
 public class Main10799 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
