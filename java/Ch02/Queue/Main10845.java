@@ -7,6 +7,7 @@ import java.util.StringTokenizer;
  * Created by Sang Jun Park on 9/5/2023.
  * GitHub : http://github.com/SangJun-GitHub
  */
+//https://www.acmicpc.net/problem/10845
 public class Main10845 {
     static class Queue{
         int[] data = new int[10000];
