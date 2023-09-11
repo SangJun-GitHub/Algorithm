@@ -1,4 +1,4 @@
-package Ch02;
+package Ch02.Stack;
 
 import java.io.BufferedReader;
 import java.io.IOException;
