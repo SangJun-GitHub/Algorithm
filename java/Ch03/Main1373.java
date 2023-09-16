@@ -1,10 +1,8 @@
-package Ch3;
+package Ch03;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.Stack;
 
 /**
  * Created by Sang Jun Park on 09/13/2023.

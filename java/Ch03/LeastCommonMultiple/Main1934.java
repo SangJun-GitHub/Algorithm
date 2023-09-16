@@ -1,4 +1,4 @@
-package Ch3.LeastCommonMultiple;
+package Ch03.LeastCommonMultiple;
 
 import java.io.BufferedReader;
 import java.io.IOException;

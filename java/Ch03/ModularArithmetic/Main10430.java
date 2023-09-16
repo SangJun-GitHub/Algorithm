@@ -1,4 +1,4 @@
-package Ch3.ModularArithmetic;
+package Ch03.ModularArithmetic;
 
 import java.io.BufferedReader;
 import java.io.IOException;

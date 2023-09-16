@@ -1,4 +1,4 @@
-package Ch3.GreatestCommonDivisor;
+package Ch03.GreatestCommonDivisor;
 
 import java.io.BufferedReader;
 import java.io.IOException;

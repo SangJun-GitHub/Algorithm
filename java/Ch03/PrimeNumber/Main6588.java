@@ -1,4 +1,4 @@
-package Ch3.PrimeNumber;
+package Ch03.PrimeNumber;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package Ch3.Factorial;
+package Ch03.Factorial;
 
 import java.io.BufferedReader;
 import java.io.IOException;
