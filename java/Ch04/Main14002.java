@@ -29,7 +29,6 @@ public class Main14002 {
         }
 
         downUp(N);
-
     }
     public static void downUp(int n){
         int max = 1;
