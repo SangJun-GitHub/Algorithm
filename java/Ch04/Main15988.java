@@ -6,4 +6,5 @@ package Ch04;
  */
 
 public class Main15988 {
+    //1
 }
