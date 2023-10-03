@@ -25,9 +25,9 @@ public class Main1912 {
             numbers[i] = Integer.parseInt(st.nextToken());
         }
 
-        System.out.println(downUp());
+        System.out.println(bottomUp());
     }
-    public static long downUp(){
+    public static long bottomUp(){
         dp[0] = numbers[0];
         long max = dp[0];
 

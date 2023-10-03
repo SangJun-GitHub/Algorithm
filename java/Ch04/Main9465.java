@@ -29,11 +29,11 @@ public class Main9465 {
                     dp[i][j] = Integer.parseInt(st.nextToken());
                 }
             }
-            System.out.println(downUp(n));
+            System.out.println(bottomUp(n));
         }
     }
 
-    public static int downUp(int n) {
+    public static int bottomUp(int n) {
         if (n == 0)
             return dp[0][0];
 

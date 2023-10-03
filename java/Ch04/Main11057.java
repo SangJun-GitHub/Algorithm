@@ -17,9 +17,9 @@ public class Main11057 {
         int N = Integer.parseInt(br.readLine());
 
         dp = new int[N + 1][10];
-        System.out.println(downUp(N));
+        System.out.println(bottomUp(N));
     }
-    public static int downUp(int n){
+    public static int bottomUp(int n){
         for(int i = 0; i < 10; i++){
             dp[1][i] = 1;
         }

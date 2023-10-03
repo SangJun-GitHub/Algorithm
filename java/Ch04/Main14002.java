@@ -28,9 +28,9 @@ public class Main14002 {
             A[i] = Integer.parseInt(st.nextToken());
         }
 
-        downUp(N);
+        bottomUp(N);
     }
-    public static void downUp(int n){
+    public static void bottomUp(int n){
         int max = 1;
 
         for(int i = 1; i < n + 1; i++){

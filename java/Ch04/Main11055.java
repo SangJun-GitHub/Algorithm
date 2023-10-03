@@ -23,9 +23,9 @@ public class Main11055 {
         for(int i = 0; i < n; i++){
             A[i] = Integer.parseInt(st.nextToken());
         }
-        System.out.println(downUp(n));
+        System.out.println(bottomUp(n));
     }
-    public static int downUp(int n){
+    public static int bottomUp(int n){
         // dp[i] = max(dp[j] + a[i])
         // j < i
         // a[j] < a[i]

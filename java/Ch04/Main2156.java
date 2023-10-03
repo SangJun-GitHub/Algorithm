@@ -23,9 +23,9 @@ public class Main2156 {
             wine[i] = Integer.parseInt(br.readLine());
         }
 
-        System.out.println(downUp(n));
+        System.out.println(bottomUp(n));
     }
-    public static int downUp(int n){
+    public static int bottomUp(int n){
         dp[0] = wine[0];
 
         if (n >= 2) {

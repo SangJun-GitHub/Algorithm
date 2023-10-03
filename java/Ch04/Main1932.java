@@ -28,10 +28,10 @@ public class Main1932 {
             }
         }
 
-        System.out.println(downUp(n));
+        System.out.println(bottomUp(n));
 
     }
-    public static int downUp(int n){
+    public static int bottomUp(int n){
         //dp[i][j] = MAX(dp[i - 1][j], dp[i - 1][j - 1]) + A[i][j]
 
         dp[0][0] = cost[0][0];
