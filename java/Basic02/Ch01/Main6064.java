@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
  * Created by Sang Jun Park on 10/06/2023.
  * GitHub : http://github.com/SangJun-GitHub
  */
-
+//https://www.acmicpc.net/problem/6064
 public class Main6064 {
 
     public static void main(String[] args) throws IOException {
