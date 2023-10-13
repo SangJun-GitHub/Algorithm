@@ -12,6 +12,7 @@ import java.util.StringTokenizer;
 //https://www.acmicpc.net/problem/15652
 public class Main15652 {
     static int[] array = new int[9];
+    static boolean[] check = new boolean[9];
     static int N;
     static int M;
     static StringBuilder sb = new StringBuilder();
